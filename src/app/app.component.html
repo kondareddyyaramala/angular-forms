@@ -1,0 +1,11 @@
+<div>
+  <form [formGroup]="form" (submit) ="onSubmit()">
+    <input formControlName="name" placeholder="First">
+    <p *ngIf="form.get('name').hasError('minlength')">
+      name must be > 3 chars.
+    </p>
+    <button>Submit</button>
+  </form>
+  <p>Validation status: {{ form.status }}</p>
+  <p>Show Status: {{ onSubmitValue }}</p>
+</div>
