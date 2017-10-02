@@ -1,7 +1,7 @@
 <div>
   <form [formGroup]="form" (submit) ="onSubmit()">
     <input formControlName="name" placeholder="First">
-    <p *ngIf="form.get('name').hasError('minlength')">
+    <p *ngIf="name.hasError('minlength')">
       name must be > 3 chars.
     </p>
     <button>Submit</button>

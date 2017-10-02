@@ -23,4 +23,9 @@ export class AppComponent {
   onSubmit() {
     this.onSubmitValue = this.form.value;
   }
+
+  // Convenient getters for form control name
+  get name() {
+    return this.form.get('name');
+  }
 }
