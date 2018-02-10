@@ -7,8 +7,8 @@ import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  form: FormGroup;
-  onSubmitValue: string;
+  public form: FormGroup;
+  public onSubmitValue: string;
 
   // Displays error message only on focus out
   constructor(fb: FormBuilder) {
